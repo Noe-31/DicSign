@@ -1,0 +1,106 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net10.0-android;net10.0-windows10.0.19041.0</TargetFrameworks>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DicSign</RootNamespace>
+    <UseMaui>true</UseMaui>
+    <SingleProject>true</SingleProject>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationTitle>DicSign</ApplicationTitle>
+    <ApplicationId>com.dicsign.app</ApplicationId>
+    <ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
+    <ApplicationVersion>1</ApplicationVersion>
+    <WindowsPackageType>None</WindowsPackageType>
+    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">23.0</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+    <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\Images\hands_welcome.PNG" />
+    <None Remove="Resources\Images\logo_dicsign.PNG" />
+    <None Remove="Resources\Images\sign_a.PNG" />
+    <None Remove="Resources\Images\sign_adios.PNG" />
+    <None Remove="Resources\Images\sign_b.PNG" />
+    <None Remove="Resources\Images\sign_buenasnoches.PNG" />
+    <None Remove="Resources\Images\sign_buenosdias.PNG" />
+    <None Remove="Resources\Images\sign_c.PNG" />
+    <None Remove="Resources\Images\sign_d.PNG" />
+    <None Remove="Resources\Images\sign_e.PNG" />
+    <None Remove="Resources\Images\sign_f.PNG" />
+    <None Remove="Resources\Images\sign_g.PNG" />
+    <None Remove="Resources\Images\sign_gracias.PNG" />
+    <None Remove="Resources\Images\sign_h.PNG" />
+    <None Remove="Resources\Images\sign_hola.PNG" />
+    <None Remove="Resources\Images\sign_i.PNG" />
+    <None Remove="Resources\Images\sign_j.PNG" />
+    <None Remove="Resources\Images\sign_k.PNG" />
+    <None Remove="Resources\Images\sign_l.PNG" />
+    <None Remove="Resources\Images\sign_m.PNG" />
+    <None Remove="Resources\Images\sign_n.PNG" />
+    <None Remove="Resources\Images\sign_no.PNG" />
+    <None Remove="Resources\Images\sign_o.PNG" />
+    <None Remove="Resources\Images\sign_p.PNG" />
+    <None Remove="Resources\Images\sign_perdon.PNG" />
+    <None Remove="Resources\Images\sign_porfavor.PNG" />
+    <None Remove="Resources\Images\sign_q.PNG" />
+    <None Remove="Resources\Images\sign_r.PNG" />
+    <None Remove="Resources\Images\sign_s.PNG" />
+    <None Remove="Resources\Images\sign_si.PNG" />
+    <None Remove="Resources\Images\sign_t.PNG" />
+    <None Remove="Resources\Images\sign_u.PNG" />
+    <None Remove="Resources\Images\sign_v.PNG" />
+    <None Remove="Resources\Images\sign_w.PNG" />
+    <None Remove="Resources\Images\sign_x.PNG" />
+    <None Remove="Resources\Images\sign_y.PNG" />
+    <None Remove="Resources\Images\sign_z.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Maui.Controls" Version="10.0.20" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <MauiIcon Include="Resources\AppIcon\appicon.svg" Color="#1E62D0" />
+    <MauiImage Include="Resources\Images\hands_welcome.png" />
+    <MauiImage Include="Resources\Images\logo_dicsign.png" />
+    <MauiImage Include="Resources\Images\sign_a.png" />
+    <MauiImage Include="Resources\Images\sign_adios.png" />
+    <MauiImage Include="Resources\Images\sign_b.png" />
+    <MauiImage Include="Resources\Images\sign_buenasnoches.png" />
+    <MauiImage Include="Resources\Images\sign_buenosdias.png" />
+    <MauiImage Include="Resources\Images\sign_c.png" />
+    <MauiImage Include="Resources\Images\sign_d.png" />
+    <MauiImage Include="Resources\Images\sign_e.png" />
+    <MauiImage Include="Resources\Images\sign_f.png" />
+    <MauiImage Include="Resources\Images\sign_g.png" />
+    <MauiImage Include="Resources\Images\sign_gracias.png" />
+    <MauiImage Include="Resources\Images\sign_h.png" />
+    <MauiImage Include="Resources\Images\sign_hola.png" />
+    <MauiImage Include="Resources\Images\sign_i.png" />
+    <MauiImage Include="Resources\Images\sign_j.png" />
+    <MauiImage Include="Resources\Images\sign_k.png" />
+    <MauiImage Include="Resources\Images\sign_l.png" />
+    <MauiImage Include="Resources\Images\sign_m.png" />
+    <MauiImage Include="Resources\Images\sign_n.png" />
+    <MauiImage Include="Resources\Images\sign_no.png" />
+    <MauiImage Include="Resources\Images\sign_o.png" />
+    <MauiImage Include="Resources\Images\sign_p.png" />
+    <MauiImage Include="Resources\Images\sign_perdon.png" />
+    <MauiImage Include="Resources\Images\sign_porfavor.png" />
+    <MauiImage Include="Resources\Images\sign_q.png" />
+    <MauiImage Include="Resources\Images\sign_r.png" />
+    <MauiImage Include="Resources\Images\sign_s.png" />
+    <MauiImage Include="Resources\Images\sign_si.png" />
+    <MauiImage Include="Resources\Images\sign_t.png" />
+    <MauiImage Include="Resources\Images\sign_u.png" />
+    <MauiImage Include="Resources\Images\sign_v.png" />
+    <MauiImage Include="Resources\Images\sign_w.png" />
+    <MauiImage Include="Resources\Images\sign_x.png" />
+    <MauiImage Include="Resources\Images\sign_y.png" />
+    <MauiImage Include="Resources\Images\sign_z.png" />
+    <MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FFFFFF" BaseSize="128,128" />
+    <MauiXaml Update="App.xaml" Generator="MSBuild:Compile" />
+  </ItemGroup>
+</Project>

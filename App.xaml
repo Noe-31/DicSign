@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DicSign.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#1E62D0</Color>
+            <Color x:Key="PrimaryDark">#174EA9</Color>
+            <Color x:Key="AccentYellow">#F5C518</Color>
+            <Color x:Key="Ink">#17233B</Color>
+            <Color x:Key="Muted">#6B7280</Color>
+            <Color x:Key="Surface">#FFFFFF</Color>
+            <Color x:Key="PageBackground">#F7F9FD</Color>
+            <Color x:Key="Line">#E3E8F0</Color>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
